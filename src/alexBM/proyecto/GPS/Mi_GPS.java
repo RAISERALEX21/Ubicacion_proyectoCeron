@@ -51,21 +51,6 @@ public class Mi_GPS extends Thread implements LocationListener{
 			
 		}
 
-		
-		
-
-
-		public Mi_GPS(LocationManager localiza,String num_unidad)
-		{
-			
-			/*this.local=localiza;
-			this.num_instalador=num_instalador;
-			 local.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, ClsGPS.this);*/
-		}
-	
-	
-
-
 	public void run()
 	{
 	    while(activo)

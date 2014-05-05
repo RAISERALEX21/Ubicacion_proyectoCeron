@@ -19,26 +19,7 @@ public class Datos_miEquipo extends Activity{
 	
 	private String IMEI;
 	
-	public void fecha(){
-		
-		Date horaActual=new Date();
-		
-			hora    = String.valueOf(horaActual.getHours());
-			minuto  = String.valueOf(horaActual.getMinutes());
-			segundo = String.valueOf(horaActual.getSeconds());
-			
-			dia     = String.valueOf(horaActual.getDay());
-			mes     = String.valueOf(horaActual.getMonth());
-			ano     = String.valueOf(horaActual.getYear());
-			
-	}
 	
-	@SuppressLint("ServiceCast")
-	public void IMEI(){
-		TelephonyManager imei = (TelephonyManager)getSystemService(Context.TEXT_SERVICES_MANAGER_SERVICE);		
-		String IMEI = imei.getDeviceId(); 
-	}
-
 	public String getHora() {
 		return hora;
 	}
